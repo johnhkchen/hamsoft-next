@@ -1,4 +1,4 @@
-import './App.css';
+import 'components/App.css';
 import mainLogo from 'assets/brand/hamsoft-logo.gif'
 
 function App() {

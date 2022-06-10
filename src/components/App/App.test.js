@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import App from './App';
+import App from 'components/App';
 import hamsoftLogo from 'assets/brand/hamsoft-logo.gif'
 
 describe("Website", () => {
