@@ -1,10 +1,11 @@
 import './App.css';
+import mainLogo from 'assets/brand/hamsoft-logo.gif'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="/hamsoft-logo.gif" className="App-logo" alt="logo" />
+        <img src={mainLogo} className="App-logo" alt="logo" />
         <p>HamSoft</p>
       </header>
     </div>

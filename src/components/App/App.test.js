@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
 
+import App from './App';
+import hamsoftLogo from 'assets/brand/hamsoft-logo.gif'
 
 describe("Website", () => {
   it('renders without crashing', () => {
@@ -14,9 +15,10 @@ describe("Website", () => {
     expect(linkElement).toBeInTheDocument();
   });
 
-  it('load our company logo', () => {
+  it('should try to render the company logo', () => {
     render(<App />);
     const image = screen.getByAltText("logo"); // throws an expception if the element cannot be found
-    expect(image).toHaveAttribute('src', '/hamsoft-logo.gif');
+    expect(image).toHaveAttribute('src', hamsoftLogo);
   });
+
 });
